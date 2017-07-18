@@ -13,8 +13,16 @@ var people = [
 
 
 
+var peopleAges = people.map(function(person){
+return person.age
+}  )
+
 
 // #2: Use the `filter` array method to create a new, filtered array containing only
 // persons from the `people` array who are older than 35. Assign the returned array
 // to a variable called `peopleOlderThan35`.
 // Type your solution immediately below this line:
+function filterPeeps(person) {
+  return person.age > 35
+}
+const peopleOlderThan35 = people.filter(filterPeeps)
